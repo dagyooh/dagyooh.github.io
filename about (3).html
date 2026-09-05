@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>about — dagyo oh</title>
+  <meta name="description" content="About Dagyo Oh — Mechanical Engineering Student at UC Santa Barbara.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="reg-marks" aria-hidden="true">
+    <span class="reg tl"></span><span class="reg-label" style="top:1.25rem;left:1.25rem;">a</span>
+    <span class="reg tr"></span><span class="reg-label" style="top:1.25rem;right:1.25rem;">4</span>
+    <span class="reg bl"></span><span class="reg-label" style="bottom:1.25rem;left:1.25rem;">b</span>
+    <span class="reg br"></span><span class="reg-label" style="bottom:1.25rem;right:1.25rem;">1</span>
+  </div>
+
+  <header class="site-header">
+    <a href="index.html" class="site-header__name">dagyo oh</a>
+    <nav class="site-header__nav">
+      <a href="index.html#projects">projects</a>
+      <a href="about.html" class="active">about</a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">dark</button>
+    </nav>
+  </header>
+
+  <main class="about">
+    <div class="about__heading-wrap">
+      <h1 class="about__heading">about</h1>
+    </div>
+
+    <div class="about__content-grid">
+      <figure class="about__photo-container">
+        <img src="media/IMG_2974.JPG" alt="Dagyo Oh portrait" class="about__photo">
+      </figure>
+
+      <div class="about__body">
+        <p>
+          Dagyo is a Mechanical Engineering student at UC Santa Barbara minoring in Media Arts and Design and Music.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>dagyo oh — 2026</p>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="image-modal" class="image-modal" aria-hidden="true">
+    <button id="modal-close" class="image-modal__close" aria-label="Close image modal">&times;</button>
+    <img id="modal-img" class="image-modal__content" src="" alt="Enlarged view">
+  </div>
+
+  <!-- Lightbox Pop-out Handler -->
+  <script>
+    (function() {
+      const modal = document.getElementById('image-modal');
+      const modalImg = document.getElementById('modal-img');
+      const closeBtn = document.getElementById('modal-close');
+
+      if (!modal || !modalImg) return;
+
+      const popoutImages = document.querySelectorAll('.project__media img, .project__gallery img, .about__photo');
+
+      popoutImages.forEach(function(img) {
+        img.addEventListener('click', function(e) {
+          e.preventDefault();
+          modalImg.src = this.src;
+          modalImg.alt = this.alt || 'Enlarged photo';
+          modal.classList.add('is-active');
+          modal.setAttribute('aria-hidden', 'false');
+        });
+      });
+
+      function closeModal() {
+        modal.classList.remove('is-active');
+        modal.setAttribute('aria-hidden', 'true');
+        modalImg.src = '';
+      }
+
+      modal.addEventListener('click', function(e) {
+        if (e.target !== modalImg) {
+          closeModal();
+        }
+      });
+
+      if (closeBtn) {
+        closeBtn.addEventListener('click', closeModal);
+      }
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('is-active')) {
+          closeModal();
+        }
+      });
+    })();
+  </script>
+
+  <!-- Dark Mode Theme Handler -->
+  <script>
+    (function() {
+      const toggleBtn = document.getElementById('theme-toggle');
+      const storedTheme = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      
+      let currentTheme = storedTheme || (prefersDark ? 'dark' : 'light');
+      
+      function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        if (toggleBtn) {
+          toggleBtn.textContent = theme === 'dark' ? 'light' : 'dark';
+        }
+        localStorage.setItem('theme', theme);
+      }
+      
+      applyTheme(currentTheme);
+      
+      if (toggleBtn) {
+        toggleBtn.addEventListener('click', function() {
+          currentTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          applyTheme(currentTheme);
+        });
+      }
+    })();
+  </script>
+  
+</body>
+</html>
