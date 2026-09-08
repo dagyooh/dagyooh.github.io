@@ -647,7 +647,7 @@ footer {
 
 .about__contact-line {
   font-family: var(--mono);
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--muted);
   margin: 0;
   text-transform: lowercase;
