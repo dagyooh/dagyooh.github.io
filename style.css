@@ -522,6 +522,34 @@ img, video { max-width: 100%; display: block; }
   }
 }
 
+/* ---------- About Contact Section ---------- */
+
+.about__contact {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.about__contact-line {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--muted);
+  margin: 0;
+  text-transform: lowercase;
+  letter-spacing: 0.01em;
+}
+
+.about__contact-line a {
+  color: var(--blueprint);
+  text-decoration: none;
+}
+
+.about__contact-line a:hover {
+  text-decoration: underline;
+}
+
+
+
 /* ---------- Image Pop-Out Lightbox ---------- */
 
 .image-modal {
@@ -637,28 +665,3 @@ footer {
   filter: invert(0.9) hue-rotate(180deg);
 }
 
-/* ---------- About Contact Section ---------- */
-
-.about__contact {
-  margin-top: 2rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--line);
-}
-
-.about__contact-line {
-  font-family: var(--mono);
-  font-size: 0.5rem;
-  color: var(--muted);
-  margin: 0;
-  text-transform: lowercase;
-  letter-spacing: 0.01em;
-}
-
-.about__contact-line a {
-  color: var(--blueprint);
-  text-decoration: none;
-}
-
-.about__contact-line a:hover {
-  text-decoration: underline;
-}
