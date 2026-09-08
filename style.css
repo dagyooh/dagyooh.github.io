@@ -637,7 +637,6 @@ footer {
   filter: invert(0.9) hue-rotate(180deg);
 }
 
-
 /* ---------- About Contact Section ---------- */
 
 .about__contact {
@@ -647,20 +646,20 @@ footer {
 }
 
 .about__contact-label {
-  font-family: var(--mono);
-  font-size: 0.85rem;
+  font-family: var(--sans);
+  font-size: 1rem;
   color: var(--muted);
   margin: 0 0 0.75rem;
   text-transform: lowercase;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
 }
 
 .about__contact-list {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-family: var(--mono);
-  font-size: 0.85rem;
+  font-family: var(--sans);
+  font-size: 1.05rem;
   color: var(--muted);
   display: flex;
   flex-direction: column;
