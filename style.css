@@ -540,7 +540,7 @@ img, video { max-width: 100%; display: block; }
 }
 
 .about__contact-line a {
-  color: var(--blueprint);
+  color: var(--muted);
   text-decoration: none;
 }
 
