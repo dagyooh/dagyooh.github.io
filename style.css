@@ -532,7 +532,7 @@ img, video { max-width: 100%; display: block; }
 
 .about__contact-line {
   font-family: var(--mono);
-  font-size: 0.7rem;
+  font-size: 0.7rem !important;
   color: var(--muted);
   margin: 0;
   text-transform: lowercase;
