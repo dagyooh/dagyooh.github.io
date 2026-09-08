@@ -636,3 +636,42 @@ footer {
 [data-theme="dark"] .notebook-embed .jp-OutputArea-output img {
   filter: invert(0.9) hue-rotate(180deg);
 }
+
+
+/* ---------- About Contact Section ---------- */
+
+.about__contact {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.about__contact-label {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0 0 0.75rem;
+  text-transform: lowercase;
+  letter-spacing: 0.02em;
+}
+
+.about__contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--muted);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.about__contact-list a {
+  color: var(--blueprint);
+  text-decoration: none;
+}
+
+.about__contact-list a:hover {
+  text-decoration: underline;
+}
