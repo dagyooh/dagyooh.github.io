@@ -645,32 +645,20 @@ footer {
   border-top: 1px solid var(--line);
 }
 
-.about__contact-label {
-  font-family: var(--sans);
-  font-size: 1rem;
+.about__contact-line {
+  font-family: var(--mono);
+  font-size: 1.05rem;
   color: var(--muted);
-  margin: 0 0 0.75rem;
+  margin: 0;
   text-transform: lowercase;
   letter-spacing: 0.01em;
 }
 
-.about__contact-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-family: var(--sans);
-  font-size: 1.05rem;
-  color: var(--muted);
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.about__contact-list a {
+.about__contact-line a {
   color: var(--blueprint);
   text-decoration: none;
 }
 
-.about__contact-list a:hover {
+.about__contact-line a:hover {
   text-decoration: underline;
 }
