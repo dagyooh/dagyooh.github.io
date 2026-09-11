@@ -55,6 +55,11 @@
         <span class="star-item__label">enceladus</span>
       </a>
 
+      <a href="#jellyfish" class="star-item">
+        <img src="media/icon_jellyfish.png" alt="Interactive Jellyfish icon" class="star-item__img">
+        <span class="star-item__label">jellyfish</span>
+      </a>
+
       <a href="#lofi" class="star-item">
         <img src="media/icon_lofi.png" alt="Python Lofi icon" class="star-item__img">
         <span class="star-item__label">python lofi</span>
@@ -70,7 +75,7 @@
     
   <main id="projects">
 
-    <!-- PROJECT 1 -->
+    <!-- PROJECT 1: ENCELADUS -->
     <section class="project" id="enceladus">
       <div class="project__meta">
         <h3>enceladus</h3>
@@ -122,7 +127,46 @@
       </div>
     </section>
 
-    <!-- PROJECT 2 -->
+    <!-- PROJECT 2: JELLYFISH -->
+    <section class="project" id="jellyfish">
+      <div class="project__meta">
+        <h3>jellyfish</h3>
+        <p class="project__meta-line">physical computing <span>|</span> 2026 <span>|</span> independent <span>|</span> MAT 111PC — Sabina Ahn</p>
+      </div>
+
+      <div class="project__intro">
+        <p>
+          an interactive sculpture that mimics the propulsion movement of a jellyfish in response to proximity.
+        </p>
+      </div>
+
+      <figure class="project__media">
+        <video src="media/oh_jellyfish_01.mp4" controls muted loop playsinline></video>
+        <figcaption>interactive demonstration</figcaption>
+      </figure>
+
+      <div class="project__gallery">
+        <figure>
+          <img src="media/oh_jellyfish_09.jpg" alt="Interactive jellyfish prototype showing mechanical linkages">
+          <figcaption>project close-up</figcaption>
+        </figure>
+        <figure>
+          <img src="media/oh_jellyfish_04.jpg" alt="Close-up of the mechanical umbrella frame and micro servos">
+          <figcaption>internal servo linkage assembly</figcaption>
+        </figure>
+      </div>
+
+      <div class="project__body">
+        <p>
+          inspired by robotic animals, jellyfish mechanically mimics the pulsing movements of jellyfish. the system has an ultrasonic distance sensor that senses how close the user’s hand is. once the distance is detected, the four servos that act as part of the jellyfish’s “head” move. the speed of the servo movement, as well as the angles of contraction, are based on the distance. the closer the user is to the sensor, the faster the servo and smaller the angle, and the farther the user, the slower the servo and larger the angle. there are five speed and angle settings- a 5, 10, 15, and 20, and 20+ cm distance. 
+        </p>
+        <p>
+          an Arduino Nano, servo motors, ultrasonic distance sensor, 1.2V batteries, 3D printed parts, and clear cellophane was used. the 3D modeling was done using SolidWorks. 
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJECT 3: PYTHON LOFI -->
     <section class="project" id="lofi">
       <div class="project__meta">
         <h3>python lofi</h3>
@@ -131,7 +175,7 @@
 
       <div class="project__intro">
         <p>
-          a ~1-minute lofi-style track written entirely in Python, using rhythm and tone
+          a ~1-minute lofi-style track written in Python using the Klotho library, using rhythm and tone
           structures from class rather than a DAW.
         </p>
       </div>
@@ -153,7 +197,7 @@
       </p>
     </section>
 
-    <!-- PROJECT 3 -->
+    <!-- PROJECT 4: TURTLE TIMER -->
     <section class="project" id="timer">
       <div class="project__meta">
         <h3>turtle timer</h3>
