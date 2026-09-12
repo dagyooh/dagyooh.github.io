@@ -313,6 +313,11 @@ img, video { max-width: 100%; display: block; }
 }
 
 /* ---------- Projects Detail Section ---------- */
+/* CSS */
+.img-top-align {
+  object-position: top !important;
+}
+
 
 .project {
   padding: 4rem var(--edge);
