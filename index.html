@@ -56,7 +56,7 @@
       </a>
 
       <a href="#jellyfish" class="star-item">
-        <img src="media/icon_jellyfish.png" alt="Interactive Jellyfish icon" class="star-item__img">
+        <img src="media/icon_jellyfish.png" alt="Jellyfish icon" class="star-item__img">
         <span class="star-item__label">jellyfish</span>
       </a>
 
@@ -75,11 +75,11 @@
     
   <main id="projects">
 
-    <!-- PROJECT 1: ENCELADUS -->
+    <!-- PROJECT 1 -->
     <section class="project" id="enceladus">
       <div class="project__meta">
         <h3>enceladus</h3>
-        <p class="project__meta-line">digital, projection <span>|</span> 2026 <span>|</span> group <span>|</span> MAT 111FS — Nefeli Manoudaki</p>
+        <p class="project__meta-line">digital, projection <span>·</span> 2026 <span>·</span> group <span>·</span> MAT 111FS — Nefeli Manoudaki</p>
       </div>
 
       <div class="project__intro">
@@ -127,55 +127,65 @@
       </div>
     </section>
 
-    <!-- PROJECT 2: JELLYFISH -->
+    <!-- PROJECT 2 -->
     <section class="project" id="jellyfish">
       <div class="project__meta">
         <h3>jellyfish</h3>
-        <p class="project__meta-line">physical computing <span>|</span> 2026 <span>|</span> independent <span>|</span> MAT 111PC — Sabina Ahn</p>
+        <p class="project__meta-line">physical computing <span>·</span> 2026 <span>·</span> independent <span>·</span> MAT 111PC — Sabina Ahn</p>
       </div>
 
       <div class="project__intro">
         <p>
-          an interactive sculpture that mimics the propulsion movement of a jellyfish in response to proximity.
+          an interactive sculpture that mimics the propulsion movement of a jellyfish in
+          response to proximity.
         </p>
       </div>
 
       <figure class="project__media">
         <video src="media/oh_jellyfish_01.mp4" controls muted loop playsinline></video>
-        <figcaption>interactive demonstration</figcaption>
+        <figcaption>video demonstration</figcaption>
       </figure>
 
       <div class="project__gallery">
         <figure>
-          <img src="media/oh_jellyfish_09.jpg" alt="Interactive jellyfish prototype showing mechanical linkages">
-          <figcaption>project close-up</figcaption>
+          <img src="media/oh_jellyfish_02.jpg" alt="A jellyfish sculpture with a light blue fabric canopy and trailing ribbon tentacles, wired to an Arduino Nano and ultrasonic sensor on a breadboard.">
+          <figcaption>sculpture + sensor setup</figcaption>
         </figure>
         <figure>
-          <img src="media/oh_jellyfish_04.jpg" alt="Close-up of the mechanical umbrella frame and micro servos">
-          <figcaption>internal servo linkage assembly</figcaption>
+          <img src="media/oh_jellyfish_09.JPG" alt="An alternate angle of the jellyfish sculpture and its breadboard electronics.">
+          <figcaption>alternate view</figcaption>
         </figure>
       </div>
 
       <div class="project__body">
         <p>
-          inspired by robotic animals, jellyfish mechanically mimics the pulsing movements of jellyfish. the system has an ultrasonic distance sensor that senses how close the user’s hand is. once the distance is detected, the four servos that act as part of the jellyfish’s “head” move. the speed of the servo movement, as well as the angles of contraction, are based on the distance. the closer the user is to the sensor, the faster the servo and smaller the angle, and the farther the user, the slower the servo and larger the angle. there are five speed and angle settings- a 5, 10, 15, and 20, and 20+ cm distance. 
+          inspired by robotic animals, the sculpture mechanically mimics the pulsing movements
+          of a jellyfish. the system uses an ultrasonic distance sensor to sense how close the
+          user's hand is. once a distance is detected, the four servos that act as the
+          jellyfish's "head" move — their speed and their angle of contraction both based on
+          that distance. the closer the user is to the sensor, the faster the servos move and
+          the smaller the angle; the farther away, the slower the movement and the larger the
+          angle. there are five speed and angle settings, corresponding to 5, 10, 15, 20, and
+          20+ cm of distance.
         </p>
         <p>
-          an Arduino Nano, servo motors, ultrasonic distance sensor, 1.2V batteries, 3D printed parts, and clear cellophane was used. the 3D modeling was done using SolidWorks. 
+          an Arduino Nano, servo motors, an ultrasonic distance sensor, 1.2V batteries, 3D
+          printed parts, and clear cellophane were used to build it. the 3D modeling was done
+          in SolidWorks.
         </p>
       </div>
     </section>
 
-    <!-- PROJECT 3: PYTHON LOFI -->
+    <!-- PROJECT 3 -->
     <section class="project" id="lofi">
       <div class="project__meta">
         <h3>python lofi</h3>
-        <p class="project__meta-line">digital audio <span>|</span> 2026 <span>|</span> independent <span>|</span> MAT 111MC — Ryan Millett</p>
+        <p class="project__meta-line">digital audio <span>·</span> 2026 <span>·</span> independent <span>·</span> MAT 111MC — Ryan Millett</p>
       </div>
 
       <div class="project__intro">
         <p>
-          a ~1-minute lofi-style track written in Python using the Klotho library, using rhythm and tone
+          a ~1-minute lofi-style track written entirely in Python, using rhythm and tone
           structures from class rather than a DAW.
         </p>
       </div>
@@ -197,11 +207,11 @@
       </p>
     </section>
 
-    <!-- PROJECT 4: TURTLE TIMER -->
+    <!-- PROJECT 4 -->
     <section class="project" id="timer">
       <div class="project__meta">
         <h3>turtle timer</h3>
-        <p class="project__meta-line">physical hardware <span>|</span> 2025 <span>|</span> independent <span>|</span> ME 10 — Geoff Tsai</p>
+        <p class="project__meta-line">physical hardware <span>·</span> 2025 <span>·</span> independent <span>·</span> ME 10 — Geoff Tsai</p>
       </div>
 
       <div class="project__intro">
@@ -280,7 +290,7 @@
     })();
   </script>
 
-  <!-- Lightbox Pop-out Handler -->
+  <!-- Lightbox Pop-out Handler: click to zoom, click (or Esc) to close, arrow keys to browse -->
   <script>
     (function() {
       const modal = document.getElementById('image-modal');
@@ -289,13 +299,22 @@
 
       if (!modal || !modalImg) return;
 
-      const popoutImages = document.querySelectorAll('.project__media img, .project__gallery img, .about__photo');
+      const images = Array.from(document.querySelectorAll('.project__media img, .project__gallery img, .about__photo'));
+      let currentIndex = 0;
 
-      popoutImages.forEach(function(img) {
+      function showImage(index) {
+        if (images.length === 0) return;
+        currentIndex = (index + images.length) % images.length;
+        const img = images[currentIndex];
+        modalImg.src = img.src;
+        modalImg.alt = img.alt || 'Enlarged photo';
+      }
+
+      images.forEach(function(img, i) {
         img.addEventListener('click', function(e) {
           e.preventDefault();
-          modalImg.src = this.src;
-          modalImg.alt = this.alt || 'Enlarged photo';
+          currentIndex = i;
+          showImage(currentIndex);
           modal.classList.add('is-active');
           modal.setAttribute('aria-hidden', 'false');
         });
@@ -307,10 +326,9 @@
         modalImg.src = '';
       }
 
-      modal.addEventListener('click', function(e) {
-        if (e.target !== modalImg) {
-          closeModal();
-        }
+      // Clicking anywhere in the modal — including the zoomed-in photo itself — closes it
+      modal.addEventListener('click', function() {
+        closeModal();
       });
 
       if (closeBtn) {
@@ -318,8 +336,13 @@
       }
 
       document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && modal.classList.contains('is-active')) {
+        if (!modal.classList.contains('is-active')) return;
+        if (e.key === 'Escape') {
           closeModal();
+        } else if (e.key === 'ArrowRight') {
+          showImage(currentIndex + 1);
+        } else if (e.key === 'ArrowLeft') {
+          showImage(currentIndex - 1);
         }
       });
     })();
